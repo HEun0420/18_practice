@@ -1,0 +1,147 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>지역 이미지 분석 프로그램</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <style>
+            body {
+                background: linear-gradient(135deg, #d5f5e3 0%, #b7e6b1 100%);
+            }
+    
+            h1 {
+                color: #2e7d32;
+                font-size: 2.8rem;
+                text-shadow: 2px 2px #a8d8a3;
+                margin-bottom: 1.5rem;
+                text-align: center;
+            }
+    
+            .container {
+                max-width: 700px;
+                background-color: #ffffff;
+                padding: 40px;
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+                border-radius: 20px;
+                margin-top: 50px;
+                border: 3px solid #4caf50;
+            }
+    
+            .form-group label {
+                font-weight: bold;
+                color: #2e7d32;
+                font-size: 1.2rem;
+            }
+    
+            .form-control {
+                border: 2px solid #c8e6c9;
+                border-radius: 10px;
+                padding: 10px;
+                font-size: 1.1rem;
+            }
+    
+            .btn-primary {
+                background-color: #81c784;
+                border: none;
+                padding: 12px 25px;
+                font-size: 1.2rem;
+                border-radius: 30px;
+                width: 100%;
+                transition: background-color 0.3s ease;
+                color: #fff;
+            }
+    
+            .btn-primary:hover {
+                background-color: #66bb6a;
+            }
+    
+            #result h3, #result h4 {
+                color: #388e3c;
+            }
+    
+            #submittedImage {
+                border: 2px solid #c8e6c9;
+                border-radius: 15px;
+                margin-top: 20px;
+            }
+    
+            /* Fun border animations */
+            .container {
+                border-image: linear-gradient(45deg, #4caf50, #81c784) 1;
+            }
+    
+            /* Extra button styling */
+            .btn-primary:focus {
+                outline: none;
+                box-shadow: 0 0 10px #81c784;
+            }
+    
+            @media (max-width: 768px) {
+                .container {
+                    padding: 30px;
+                }
+    
+                h1 {
+                    font-size: 2.2rem;
+                }
+    
+                .btn-primary {
+                    font-size: 1.1rem;}
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container mt-5">
+            <h1 class="text-center">지역 이미지 분석 프로그램</h1>
+            <form id="analyzeForm" class="mt-4">
+                <div class="form-group">
+                    <label for="image_url">이미지 URL</label>
+                    <input type="text" class="form-control" id="image_url" name="image_url" placeholder="이미지 URL을 넣어주세요" required>
+                </div>
+                <div class="form-group">
+                    <label for="locations">지역 설정 (comma로 구분)</label>
+                    <input type="text" class="form-control" id="locations" name="locations" placeholder="지역을 적어주세요 (e.g., 서울, 부산, 제주)" required>
+                </div>
+                <button type="submit" class="btn btn-primary">분석</button>
+            </form>
+
+            <div id="result" class="mt-4" style="display:none;">
+                <h3>분석 결과:</h3>
+                <p id="resultMessage"></p>
+                <h4>제공된 이미지:</h4>
+                <img id="submittedImage" src="" alt="Submitted Image" class="img-fluid mt-2" style="max-width: 100%; height: auto; display: none;">
+            </div>
+        </div>
+
+        <script>
+            $('#analyzeForm').on('submit', function(event) {
+                event.preventDefault();  
+                const imageUrl = $('#image_url').val();
+                const locations = $('#locations').val();
+                $.ajax({
+                    url: '/analyze',
+                    method: 'POST',
+                    contentType: 'application/x-www-form-urlencoded',
+                    data: {
+                        image_url: imageUrl,
+                        locations: locations
+                    },
+                    success: function(response) {
+                        $('#resultMessage').text(response.message);
+                        $('#submittedImage').attr('src', imageUrl).show(); 
+                        $('#result').show();  
+                    },
+                    error: function(xhr, status, error) {
+                        $('#resultMessage').text('오류가 발생했습니다. 다시 시도해주세요.');
+                        $('#submittedImage').hide(); 
+                        $('#result').show();
+                    }
+                });
+            });
+        </script>
+    </body>
+    </html>
+

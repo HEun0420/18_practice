@@ -174,31 +174,31 @@
     
     높은 유사도(75% 초과)가 나온 결과
     
-    <img align="center" alt="결과" src="Img/URL에러.PNG.png" width="240px" />
+    <img align="center" alt="결과" src="Img/URL에러.PNG.png" width="500px" />
     
-    <img align="center" alt="결과" src="../Img/결과1.PNG" width="240px" />
+    <img align="center" alt="결과" src="/Img/결과1.PNG" width="500px" />
     
     낮은 유사도(75% 이하)가 나온 결과
   
-    <img align="center" alt="결과" src="../Img/결과2.PNG" width="240px" />
+    <img align="center" alt="결과" src="/Img/결과2.PNG" width="500px" />
 
     
 - 예외처리
     
     지역 입력이 안된 예)
     
-   <img align="center" alt="결과" src="../Img/지역 입력안한 에러.PNG" width="240px" />
+   <img align="center" alt="결과" src="/Img/지역 입력안한 에러.PNG" width="500px" />
     
     이미지 URL이 입력 안된 예)
     
-   <img align="center" alt="결과" src="../Img/URL에러.PNG" width="240px" />
+   <img align="center" alt="결과" src="/Img/URL에러.PNG" width="500px" />
     
 
 최종 완성
 
 - 최종 완성 html 이미지
     
-   <img align="center" alt="결과" src="../Img/css넣기.PNG" width="240px" />
+   <img align="center" alt="결과" src="/Img/css넣기.PNG" width="500px" />
 
 <br />
 

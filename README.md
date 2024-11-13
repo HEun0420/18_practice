@@ -174,7 +174,7 @@
     
     높은 유사도(75% 초과)가 나온 결과
     
-    <img align="center" alt="결과" src="../Img/리퀘스트바디.PNG" width="240px" />
+    <img align="center" alt="결과" src="Img/URL에러.PNG.png" width="240px" />
     
     <img align="center" alt="결과" src="../Img/결과1.PNG" width="240px" />
     

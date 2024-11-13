@@ -179,6 +179,7 @@
     <img align="center" alt="결과" src="../Img/결과1.PNG" width="240px" />
     
     낮은 유사도(75% 이하)가 나온 결과
+  
     <img align="center" alt="결과" src="../Img/결과2.PNG" width="240px" />
 
     

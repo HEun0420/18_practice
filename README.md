@@ -5,7 +5,7 @@
 ### 사진 속 장소와 input한 도시와의 유사도 ✅
 
 [<img src="https://img.shields.io/badge/-readme.md-important?style=flat&logo=google-chrome&logoColor=white" />]() [<img src="https://img.shields.io/badge/-tech blog-blue?style=flat&logo=google-chrome&logoColor=white" />]() [<img src="https://img.shields.io/badge/release-v0.0.0-yellow?style=flat&logo=google-chrome&logoColor=white" />]() 
-<br/> [<img src="https://img.shields.io/badge/프로젝트 기간-2024.12.10~2024.12.19-green?style=flat&logo=&logoColor=white" />]()
+<br/> [<img src="https://img.shields.io/badge/프로젝트 기간-2024.10.25~2024.10.27-green?style=flat&logo=&logoColor=white" />]()
 
 </div> 
 
@@ -174,30 +174,30 @@
     
     높은 유사도(75% 초과)가 나온 결과
     
-    ![리퀘스트바디.PNG](https://prod-files-secure.s3.us-west-2.amazonaws.com/2e42b292-3597-492a-9d2f-caaf0ff36a48/b2cee893-6d98-43b2-bd3c-1b3b2ee8287e/%EB%A6%AC%ED%80%98%EC%8A%A4%ED%8A%B8%EB%B0%94%EB%94%94.png)
+    <img align="center" alt="결과" src="../Img/리퀘스트바디.PNG" width="240px" />
     
-    ![결과1.PNG](https://prod-files-secure.s3.us-west-2.amazonaws.com/2e42b292-3597-492a-9d2f-caaf0ff36a48/74e248d2-5a03-4a8f-b773-eafcf99a805e/%EA%B2%B0%EA%B3%BC1.png)
+    <img align="center" alt="결과" src="../Img/결과1.PNG" width="240px" />
     
     낮은 유사도(75% 이하)가 나온 결과
-    
-    ![결과2.PNG](https://prod-files-secure.s3.us-west-2.amazonaws.com/2e42b292-3597-492a-9d2f-caaf0ff36a48/1b148433-1958-4a4c-83be-c3340cd8e73d/%EA%B2%B0%EA%B3%BC2.png)
+    <img align="center" alt="결과" src="../Img/결과2.PNG" width="240px" />
+
     
 - 예외처리
     
     지역 입력이 안된 예)
     
-    ![지역 입력안한 에러.PNG](https://prod-files-secure.s3.us-west-2.amazonaws.com/2e42b292-3597-492a-9d2f-caaf0ff36a48/a4a9f62a-7eba-4ebe-b749-3ed775c8d2d5/%EC%A7%80%EC%97%AD_%EC%9E%85%EB%A0%A5%EC%95%88%ED%95%9C_%EC%97%90%EB%9F%AC.png)
+   <img align="center" alt="결과" src="../Img/지역 입력안한 에러.PNG" width="240px" />
     
     이미지 URL이 입력 안된 예)
     
-    ![URL에러.PNG](https://prod-files-secure.s3.us-west-2.amazonaws.com/2e42b292-3597-492a-9d2f-caaf0ff36a48/9df9de56-4072-4ae8-84e1-ed2fcd25f944/URL%EC%97%90%EB%9F%AC.png)
+   <img align="center" alt="결과" src="../Img/URL에러.PNG" width="240px" />
     
 
 최종 완성
 
 - 최종 완성 html 이미지
     
-    ![css넣기.PNG](https://prod-files-secure.s3.us-west-2.amazonaws.com/2e42b292-3597-492a-9d2f-caaf0ff36a48/d5c74922-b741-4e7c-8887-c02b9397ce5c/css%EB%84%A3%EA%B8%B0.png)
+   <img align="center" alt="결과" src="../Img/css넣기.PNG" width="240px" />
 
 <br />
 

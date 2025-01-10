@@ -2,7 +2,7 @@
 
 <!-- logo -->
 
-### 사진 속 장소와 input한 도시와의 유사도 ✅
+### 사진 속 장소와 도시 맞추기 (유사도) ✅
 
 [<img src="https://img.shields.io/badge/-readme.md-important?style=flat&logo=google-chrome&logoColor=white" />]() [<img src="https://img.shields.io/badge/-tech blog-blue?style=flat&logo=google-chrome&logoColor=white" />]() [<img src="https://img.shields.io/badge/release-v0.0.0-yellow?style=flat&logo=google-chrome&logoColor=white" />]() 
 <br/> [<img src="https://img.shields.io/badge/프로젝트 기간-2024.10.25~2024.10.27-green?style=flat&logo=&logoColor=white" />]()

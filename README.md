@@ -25,8 +25,8 @@
     geolocal/StreetCLIP
     
     google-t5/t5-base
-    
-    - 코드
+   <details>
+    <summery> - 코드 </summery>
         
         ```jsx
         from PIL import Image
@@ -82,9 +82,10 @@
             print(f"이 이미지는 {most_similar_location}가 가장 유사도가 높습니다. 유사도는 {similarity:.2f}%입니다.")
         
         ```
-        
+    </details>
 4. **모델을 이용한 fast api 서빙**
-    - API 코드
+   <details>
+    <summery> - API 코드 </summery>
         
         ```jsx
         from fastapi import FastAPI, HTTPException
@@ -168,7 +169,7 @@
             uvicorn.run(app, host="0.0.0.0", port=8000)
         
         ```
-        
+     </details>    
 
 - 결과 이미지
     
